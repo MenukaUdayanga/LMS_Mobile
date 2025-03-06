@@ -69,6 +69,7 @@ export const register = async (name,address,email,password) => {
 
 
 
+// User Logout API
 
 export const logout = async () => {
   try {

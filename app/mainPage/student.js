@@ -9,7 +9,7 @@ const StudentAdd = () => {
   const [name, setName] = useState('');
   const [grade, setGrade] = useState('');
   const [age, setAge] = useState('');
-  const [loading, setLoading] = useState(false); // Loading state
+  const [loading, setLoading] = useState(false); 
 
   const getCurrentDateTime = () => {
     const now = new Date();
@@ -50,7 +50,7 @@ const StudentAdd = () => {
       console.error('Error adding student:', error);
       Alert.alert('Error', 'Failed to add student. Please try again.');
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false); 
     }
   };
 
@@ -130,17 +130,16 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  // Full-page white screen loading overlay styles
   loadingOverlay: {
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: '#fff', // White background
+    backgroundColor: '#fff', 
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 999, // Ensure it overlays everything
+    zIndex: 999, 
   },
   loadingText: {
     marginTop: 10,

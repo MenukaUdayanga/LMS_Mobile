@@ -73,7 +73,7 @@ const LoginScreen = () => {
     >
       <ScrollView contentContainerStyle={styles.scrollViewContainer}>
         <Image
-          source={{ uri: 'https://your-image-url.com/logo.png' }} 
+            source={require('../../assets/images/loginImage.jpg')}
           style={styles.logo}
         />
 
@@ -138,8 +138,8 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 200,
+    height: 200,
     marginBottom: 30,
   },
   input: {

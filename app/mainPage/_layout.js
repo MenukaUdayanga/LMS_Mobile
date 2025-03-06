@@ -3,8 +3,7 @@ import { FontAwesome } from '@expo/vector-icons';
 
 export default function Layout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'red' }}>
-      {/* Student List Tab */}
+    <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
       <Tabs.Screen
         name="studentList"  
         options={{
@@ -13,8 +12,6 @@ export default function Layout() {
           headerTitleAlign: 'center',
         }}
       />
-
-      {/* Add Student Tab */}
       <Tabs.Screen
         name="student"  
         options={{
@@ -23,8 +20,6 @@ export default function Layout() {
           headerTitleAlign: 'center',
         }}
       />
-
-      {/* Add Student Tab */}
       <Tabs.Screen
         name="account"  
         options={{

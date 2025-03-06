@@ -29,7 +29,7 @@ const RegisterScreen = () => {
 
   const handleRegister = async () => {
     if (validateForm()) {
-      setLoading(true); // Start loading
+      setLoading(true); 
       try {
         const response = await register(name, address, email, password);
         console.log("Register response ", response);
@@ -66,7 +66,7 @@ const RegisterScreen = () => {
     >
       <ScrollView contentContainerStyle={styles.scrollViewContainer}>
         
-        {/* Back Button */}
+       
         <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
           <Text style={styles.backButtonText}>← Back</Text>
         </TouchableOpacity>
